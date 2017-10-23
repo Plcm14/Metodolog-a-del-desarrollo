@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de bicicletas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="Registrar_bicicleta.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="form.js"></script>
+
+</head>
+<body>
+
+
+<div class="col-12">
+
+	<header class= "header">
+		<h1>Sistema: Renta de Bicicletas</h1>
+		<h3>Registra una bicicleta</h3>
+	</header>
+
+	<div class="col-6" >
+		<img src="Bici.jpg" width="100%" height="auto">
+	</div>
+
+	<div class="col-6" >
+		<h3>Rellena el formulario:</h3>
+		
+
+	<form id="formulario" method="post" action="nada">
+		Folio: <br>
+		<input id="texto" type="text" ><br>
+		Modelo: <br>
+		<input id="texto" type="text" ><br>
+		Marca: <br>
+		<input id="texto" type="text" ><br>
+		<button type="submit"> Registrar</button><br>
+	</form>
+
+	</div>
+
+</div>
+
+
+<div class="col-12">
+	<footer class="footer">
+		Para más información, marque al numero (228)276-42-05
+		
+	</footer>
+</div>
+
+</body>
+</html>
