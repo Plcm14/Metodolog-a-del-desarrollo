@@ -1,42 +1,167 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Registro de bicicletas</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="Registrar_bicicleta.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<script src="form.js"></script>
+<html lang="en">
 
-</head>
-<body>
+  <head>
+
+    <title>Registrar Bicicleta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 
-<div class="col-12">
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
 
-	<header class= "header">
-		<h1>Sistema: Renta de Bicicletas</h1>
-		<h3>Registra una bicicleta</h3>
-	</header>
 
-	<div class="col-6" >
-		<img src="Bici.jpg" width="100%" height="auto">
-	</div>
+  </head>
 
-	<div class="col-6" >
-		<h3>Rellena el formulario:</h3>
-		
+  <body id="page-top">
 
-	<form id="formulario" method="post" action="nada">
-		Folio: <br>
-		<input id="texto" type="text" ><br>
-		Modelo: <br>
-		<input id="texto" type="text" ><br>
-		Marca: <br>
-		<input id="texto" type="text" ><br>
-		<button type="submit"> Registrar</button><br>
-	</form>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Bicicletas INC</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+
+        <h3>Registrar bicicleta</h3>
+
+        <section class="main row">
+            <div class="col-md-7">
+                <img src="Bici.jpg" class="img-rounded" height="90%" width="90%">
+              </div>
+
+            <div class="col-md-5">
+                <div class="alert alert-info alert-dismissible">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
+                  <strong>Todos los campos deben ser llenados</strong>
+                </div>
+              <form id="formulario" method="post" action="/enviar.php">
+                Modelo: <br>
+                <input id="texto" type="int" placeholder="ej: MountainRoad"><br>
+                Marca: <br>
+                <input id="texto" type="text" placeholder="ej: F-sg-der"><br>
+                Url: <br>
+                <input id="texto" type="text" placeholder="ej: /imagenes/name.jpg"><br>
+                <br>
+                <div class="btn-group btn-group-justified" >
+                  <button type="submit" class="btn-md btn-info">
+                   Registrar
+                  </button> 
+                
+                  <button type="button" class="btn-md btn-warning">
+                    <a href="index.html" style="text-decoration: none; color: black">Cancelar</a>
+                  </button><br>
+                </div>
+              </form>
+              </div>          
+       
+        </section>
+
+     </div>
+    </header>
+
+   
+    <!-- Bootstrap core JavaScript -->
+    <script src="scripts.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
+
+  <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>Localizacion</h3>
+              <p>Xalapa, Veracruz
+                <br>Facultad de Informatica y Estadistica</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Social</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Equipo 1</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; FEI 2017
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+</html>
 	</div>
 
 </div>
